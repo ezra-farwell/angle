@@ -1,5 +1,6 @@
 import { useState, type FormEvent } from "react";
 import { Reveal } from "./Reveal";
+import { Eyebrow } from "./Eyebrow";
 import { SkipCall, StartHere } from "./Button";
 
 type Errors = { name?: string; email?: string; message?: string };
@@ -40,15 +41,15 @@ export function Contact() {
     <section className="section" id="contact">
       <div className="contact__grid">
         <Reveal>
-          <p className="eyebrow">Start here</p>
-          <h2 className="section__title">Start with a message. Or skip the small talk.</h2>
+          <Eyebrow align="left">Start Here</Eyebrow>
+          <h2 className="section__title">Start with a message.<br />Or skip the small talk.</h2>
           <p className="section__sub">Tell me what you need built, or jump straight into the intake form if you already know you need more ads.</p>
           <ul className="contact__list">
             <li><span className="ck" />Built for the teams spending the money</li>
             <li><span className="ck" />First creative cycle mapped on the call</li>
             <li><span className="ck" />No commitment to send a message</li>
           </ul>
-          <div style={{ marginTop: 28 }}><StartHere className="btn--primary btn--lg" /></div>
+          <div style={{ marginTop: 28 }}><StartHere className="btn--dark btn--lg" /></div>
         </Reveal>
 
         <Reveal>
@@ -69,7 +70,7 @@ export function Contact() {
               {errors.message && <span className="field__msg">{errors.message}</span>}
             </div>
 
-            <button type="submit" className="btn btn--primary btn--block">Submit Message</button>
+            <button type="submit" className="btn btn--dark btn--block">Submit Message</button>
 
             {sent ? (
               <p className="formok">Got it — message captured. <strong>Demo state:</strong> no backend is connected yet, so this wasn't delivered. We'll wire the endpoint before launch.</p>
@@ -79,7 +80,7 @@ export function Contact() {
 
             <div className="skip">
               <p>Hate calls? <b>Skip the small talk</b> and fill the intake form directly.</p>
-              <SkipCall className="btn--ghost btn--sm">I hate calls →</SkipCall>
+              <SkipCall className="btn--light btn--sm">I hate calls</SkipCall>
             </div>
           </form>
         </Reveal>

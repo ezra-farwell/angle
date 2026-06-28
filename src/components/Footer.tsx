@@ -1,36 +1,41 @@
 import { BrandMark } from "./BrandMark";
 import { StartHere, SkipCall } from "./Button";
+import { Link } from "../lib/router";
 
 export function Footer() {
   return (
     <footer className="footer">
+      <div className="footer__cta">
+        <h2 className="footer__big">Your next angle,<br />shipped weekly.</h2>
+        <div className="footer__cta-row">
+          <StartHere className="btn--dark btn--lg" />
+          <SkipCall className="btn--light btn--lg">I hate calls</SkipCall>
+        </div>
+      </div>
+
       <div className="footer__inner">
-        <div>
-          <span className="brand"><BrandMark size={24} /><span className="brand__word">Angle</span></span>
-          <p className="footer__tag">More ads worth testing. Your next angle, shipped weekly.</p>
-          <div style={{ marginTop: 18, display: "flex", gap: 10, flexWrap: "wrap" }}>
-            <StartHere className="btn--primary btn--sm" />
-            <SkipCall className="btn--ghost btn--sm" />
-          </div>
+        <div className="footer__brand">
+          <Link to="/" className="brand"><BrandMark size={24} /><span className="brand__word">Angle</span></Link>
+          <p className="footer__tag">More ads worth testing. Creative output without the agency theater.</p>
         </div>
         <div className="footer__col">
           <h4>Site</h4>
-          <a href="#why">Why Angle</a>
-          <a href="#offer">What you get</a>
-          <a href="#process">Process</a>
-          <a href="#pricing">Pricing</a>
-          <a href="#portfolio">Portfolio</a>
-          <a href="#faq">FAQ</a>
+          <Link to="/#why">Why Angle</Link>
+          <Link to="/#offer">What you get</Link>
+          <Link to="/#process">Process</Link>
+          <Link to="/#pricing">Pricing</Link>
+          <Link to="/portfolio">Portfolio</Link>
+          <Link to="/#faq">FAQ</Link>
         </div>
         <div className="footer__col">
           <h4>Contact</h4>
           <a href="mailto:hello@getangle.co">hello@getangle.co</a>
-          <a href="#contact">Send a message</a>
+          <Link to="/#contact">Send a message</Link>
         </div>
       </div>
       <div className="footer__base">
         <span>© {new Date().getFullYear()} Angle · getangle.co</span>
-        <span>Static creative, shipped weekly.</span>
+        <span>Static, motion & short-form creative — shipped weekly.</span>
       </div>
     </footer>
   );

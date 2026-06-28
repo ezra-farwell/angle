@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { Reveal } from "./Reveal";
+import { Eyebrow } from "./Eyebrow";
 
 const QA: [string, string][] = [
   ["What counts as an ad request?", "One concept or angle in one format — a static, a short edit, a carousel, a set of hook variations. You queue requests; we work through them on your weekly cadence."],
@@ -41,9 +42,9 @@ function Item({ q, a }: { q: string; a: string }) {
 export function FAQ() {
   return (
     <section className="section" id="faq">
-      <Reveal className="section__head" >
-        <p className="eyebrow">FAQ</p>
-        <h2 className="section__title">The questions buyers actually ask.</h2>
+      <Reveal className="section__head section__head--center">
+        <Eyebrow>Questions</Eyebrow>
+        <h2 className="section__title">The questions buyers actually ask</h2>
       </Reveal>
       <Reveal>
         <div className="faq">

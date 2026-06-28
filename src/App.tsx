@@ -1,34 +1,21 @@
+import { useEffect } from "react";
 import { Header } from "./components/Header";
-import { Hero } from "./components/Hero";
-import { Marquee } from "./components/Marquee";
-import { Problem } from "./components/Problem";
-import { WhatYouGet } from "./components/WhatYouGet";
-import { Process } from "./components/Process";
-import { Portfolio } from "./components/Portfolio";
-import { Pricing } from "./components/Pricing";
-import { WhyAngle } from "./components/WhyAngle";
-import { Testimonials } from "./components/Testimonials";
-import { FAQ } from "./components/FAQ";
-import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
+import { Home } from "./pages/Home";
+import { PortfolioPage } from "./pages/PortfolioPage";
+import { useRouter } from "./lib/router";
 
 export default function App() {
+  const { path } = useRouter();
+  const isPortfolio = path.replace(/\/$/, "") === "/portfolio";
+
+  // Reset scroll when switching between top-level pages.
+  useEffect(() => { window.scrollTo({ top: 0, behavior: "instant" as ScrollBehavior }); }, [isPortfolio]);
+
   return (
     <>
       <Header />
-      <main>
-        <Hero />
-        <Marquee />
-        <Problem />
-        <WhatYouGet />
-        <Process />
-        <Portfolio />
-        <Pricing />
-        <WhyAngle />
-        <Testimonials />
-        <FAQ />
-        <Contact />
-      </main>
+      <main>{isPortfolio ? <PortfolioPage /> : <Home />}</main>
       <Footer />
     </>
   );
