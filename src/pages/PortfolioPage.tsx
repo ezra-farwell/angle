@@ -2,10 +2,9 @@ import { Reveal, RevealItem } from "../components/Reveal";
 import { Eyebrow } from "../components/Eyebrow";
 import { StartHere, SkipCall } from "../components/Button";
 
-/* Dedicated portfolio page — reached from the "Portfolio" nav tab.
+/* Dedicated portfolio page, reached from the "Portfolio" nav tab.
    EZRA: drop real statics in by replacing the .workcard__vis block with an
-   <img> (put files in angle-app/public/work/). Keep "Angle used" honest —
-   it's the creative thesis, not a results claim. */
+   <img> (put files in angle-app/public/work/). Keep "Angle used" honest,    it's the creative thesis, not a results claim. */
 const WORK: { cat: string; vis: string; title: string; format: string; goal: string; angle: string }[] = [
   { cat: "Meta static", vis: "y", title: "Proof-first feed static", format: "4:5 · Feed", goal: "Lower CPA", angle: "Pain Point → Proof" },
   { cat: "Ecommerce offer ad", vis: "", title: "Bundle offer creative", format: "1:1 · Feed", goal: "Raise AOV", angle: "Offer Stack" },
@@ -21,7 +20,7 @@ export function PortfolioPage() {
       <Reveal className="section__head section__head--center portfolio__head">
         <Eyebrow>The Work</Eyebrow>
         <h1 className="section__title section__title--xl">Ad concepts built<br />to be tested.</h1>
-        <p className="section__sub">Example concepts shown as placeholders while the founding roster fills. Every piece is one clear angle, made to earn its spend — not a brand-book showpiece.</p>
+        <p className="section__sub">Example concepts shown as placeholders while the founding roster fills. Every piece is one clear angle, made to earn its spend, not a brand-book showpiece.</p>
       </Reveal>
 
       <Reveal as="div" className="work" stagger>
@@ -44,7 +43,7 @@ export function PortfolioPage() {
         <h2 className="portfolio__cta-title">Want ads like these in your account?</h2>
         <div className="portfolio__cta-row">
           <StartHere className="btn--dark btn--lg" />
-          <SkipCall className="btn--light btn--lg">Skip the call — go to intake</SkipCall>
+          <SkipCall className="btn--light btn--lg">Skip the call, go to intake</SkipCall>
         </div>
       </Reveal>
     </section>

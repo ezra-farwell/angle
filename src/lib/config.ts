@@ -1,5 +1,5 @@
 // ============================================================
-// Angle — conversion link config
+// Angle, conversion link config
 // Replace the two placeholders below with your real links.
 // Every "Start Here" CTA uses CALENDLY_URL.
 // Every "Skip the call" / Typeform CTA uses TYPEFORM_URL.

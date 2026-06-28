@@ -61,7 +61,7 @@ export function Pricing() {
             <p className="price__tag">{plan.tag}</p>
             <p className="price__note">{plan.note}</p>
 
-            <span className="price__spots"><span className="price__spots-dot" />Booking open — only 2 spots left</span>
+            <span className="price__spots"><span className="price__spots-dot" />Booking open, only 2 spots left</span>
             <div className="price__cta"><StartHere className="btn--dark btn--lg btn--block">Start Here</StartHere></div>
           </div>
 
@@ -72,7 +72,7 @@ export function Pricing() {
                 <li key={f}><span className="price__plus" aria-hidden="true" />{f}</li>
               ))}
             </ul>
-            <p className="price__fine">Creative production only — Angle builds the assets and angle variations; you run the account.</p>
+            <p className="price__fine">Creative production only, Angle builds the assets and angle variations; you run the account.</p>
           </div>
         </div>
       </Reveal>

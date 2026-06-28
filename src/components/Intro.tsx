@@ -26,7 +26,7 @@ export function Intro() {
         ))}
         <Reveal>
           <h2 className="intro__statement">
-            We build the ads your media buyer keeps asking for — shaped around what is{" "}
+            We build the ads your media buyer keeps asking for, shaped around what is{" "}
             <em>already converting</em>, and shipped every single week.
           </h2>
         </Reveal>

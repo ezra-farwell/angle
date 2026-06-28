@@ -10,7 +10,7 @@ import { Testimonials } from "../components/Testimonials";
 import { FAQ } from "../components/FAQ";
 import { Contact } from "../components/Contact";
 
-/* Homepage — Hanzo-style sections with Angle's content.
+/* Homepage, Hanzo-style sections with Angle's content.
    No ad creative shown here; portfolio lives on its own /portfolio page. */
 export function Home() {
   return (

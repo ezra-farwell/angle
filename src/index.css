@@ -1,5 +1,5 @@
 /* ============================================================
-   ANGLE — Hanzo-style productized agency template.
+   ANGLE, Hanzo-style productized agency template.
    Soft silver gradient stage, near-white floating cards with
    neumorphic shadows, serif-italic eyebrows, bold grotesk
    headlines, black pill CTAs, yellow as the single accent.
@@ -117,7 +117,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .badge__dot { width: 8px; height: 8px; border-radius: 50%; background: #19c37d; box-shadow: 0 0 0 4px rgba(25,195,125,0.18); }
 
 /* ============================================================
-   HEADER — floating bar
+   HEADER, floating bar
    ============================================================ */
 .header { position: fixed; top: 0; left: 0; right: 0; z-index: 60; padding: 16px 18px; transition: padding .3s var(--ease); }
 .header__bar {
@@ -147,7 +147,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .mobile__cta { margin-top: 32px; }
 
 /* ============================================================
-   HERO — centered
+   HERO, centered
    ============================================================ */
 .hero { max-width: 980px; margin: 0 auto; padding: 160px 28px 40px; text-align: center; }
 .hero__inner { display: flex; flex-direction: column; align-items: center; }
@@ -193,7 +193,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 @media (prefers-reduced-motion: reduce) { .marquee__track { animation: none; } }
 
 /* ============================================================
-   INTRO — "Hello!" statement + floating pills
+   INTRO, "Hello!" statement + floating pills
    ============================================================ */
 .intro { padding-top: 110px; padding-bottom: 110px; }
 .intro__stage { position: relative; max-width: 1040px; margin: 0 auto; padding: 60px 0 30px; min-height: 300px; display: flex; align-items: center; justify-content: center; }
@@ -228,7 +228,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .panel__tick::after { content: ""; position: absolute; top: 9px; left: 11px; width: 7px; height: 12px; border: solid var(--ink); border-width: 0 2px 2px 0; transform: rotate(45deg); }
 
 /* ============================================================
-   WHAT YOU GET — offers
+   WHAT YOU GET, offers
    ============================================================ */
 .offers { display: grid; grid-template-columns: repeat(auto-fill, minmax(232px, 1fr)); gap: 16px; }
 .offer { position: relative; background: var(--card); border: 1px solid var(--edge); border-radius: var(--r); padding: 24px; box-shadow: var(--soft); overflow: hidden; transition: transform .25s var(--ease), box-shadow .25s var(--ease); }
@@ -239,7 +239,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .offer__ix { position: absolute; top: 18px; right: 20px; font-family: var(--font-serif); font-style: italic; font-size: 16px; color: var(--ink-3); }
 
 /* ============================================================
-   PROCESS — tilted cards + squiggle connectors
+   PROCESS, tilted cards + squiggle connectors
    ============================================================ */
 .flow { position: relative; display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; padding: 30px 0 10px; }
 .flowcard { background: var(--white); border: 1px solid var(--edge); border-radius: var(--r-lg); padding: 30px; min-height: 300px; display: flex; flex-direction: column; box-shadow: var(--soft-lg); transition: transform .25s var(--ease); }
@@ -258,7 +258,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .process__note em { color: var(--ink); font-style: italic; }
 
 /* ============================================================
-   PRICING — single big card with plan toggle
+   PRICING, single big card with plan toggle
    ============================================================ */
 .price { display: grid; grid-template-columns: 0.95fr 1.05fr; gap: 0; background: var(--card); border: 1px solid var(--edge); border-radius: var(--r-xl); box-shadow: var(--soft-lg); overflow: hidden; }
 .price__left { padding: 40px; display: flex; flex-direction: column; }

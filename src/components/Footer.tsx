@@ -35,7 +35,7 @@ export function Footer() {
       </div>
       <div className="footer__base">
         <span>© {new Date().getFullYear()} Angle · getangle.co</span>
-        <span>Static, motion & short-form creative — shipped weekly.</span>
+        <span>Static, motion & short-form creative, shipped weekly.</span>
       </div>
     </footer>
   );

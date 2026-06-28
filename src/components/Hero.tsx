@@ -81,7 +81,7 @@ export function Hero() {
     <section className="hero">
       <div className="hero__inner">
         <motion.span className="badge" {...rise(0)}>
-          <span className="badge__dot" />Now booking — 2 partner spots open
+          <span className="badge__dot" />Now booking, 2 partner spots open
         </motion.span>
 
         <motion.h1 className="hero__title" {...rise(0.06)}>
@@ -91,7 +91,7 @@ export function Hero() {
 
         <motion.p className="hero__lede" {...rise(0.12)}>
           Static, motion, and short-form ad creative built around what is already converting in your
-          ad account. Request, revise, and ship new angles every week — without hiring another designer.
+          ad account. Request, revise, and ship new angles every week, without hiring another designer.
         </motion.p>
 
         <motion.div className="hero__cta" {...rise(0.18)}>

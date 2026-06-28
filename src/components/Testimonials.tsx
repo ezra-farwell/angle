@@ -4,9 +4,9 @@ import { Eyebrow } from "./Eyebrow";
 /* Placeholder testimonials. No fake names, brands, or results.
    EZRA: replace the quote text and role once you have real ones. */
 const QUOTES: [string, string][] = [
-  ["Replace with a real client quote — what changed once the creative actually kept up.", "Agency Owner"],
-  ["Replace with a real client quote — speed, output, or a winning angle worth naming.", "Media Buyer"],
-  ["Replace with a real client quote — the before/after of shipping ads every week.", "DTC Founder"],
+  ["Replace with a real client quote, what changed once the creative actually kept up.", "Agency Owner"],
+  ["Replace with a real client quote, speed, output, or a winning angle worth naming.", "Media Buyer"],
+  ["Replace with a real client quote, the before/after of shipping ads every week.", "DTC Founder"],
 ];
 
 export function Testimonials() {

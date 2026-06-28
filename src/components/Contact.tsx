@@ -33,7 +33,7 @@ export function Contact() {
     // No backend is wired yet, so we surface a clearly-labeled demo success
     // state instead of pretending the message was delivered.
     // eslint-disable-next-line no-console
-    console.log("[Angle] contact form submission (not sent — no backend):", values);
+    console.log("[Angle] contact form submission (not sent, no backend):", values);
     setSent(true);
   }
 
@@ -73,9 +73,9 @@ export function Contact() {
             <button type="submit" className="btn btn--dark btn--block">Submit Message</button>
 
             {sent ? (
-              <p className="formok">Got it — message captured. <strong>Demo state:</strong> no backend is connected yet, so this wasn't delivered. We'll wire the endpoint before launch.</p>
+              <p className="formok">Got it, message captured. <strong>Demo state:</strong> no backend is connected yet, so this wasn't delivered. We'll wire the endpoint before launch.</p>
             ) : (
-              <p className="formnote">Pending backend integration — see the TODO in Contact.tsx to connect the endpoint.</p>
+              <p className="formnote">Pending backend integration, see the TODO in Contact.tsx to connect the endpoint.</p>
             )}
 
             <div className="skip">

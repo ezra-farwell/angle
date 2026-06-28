@@ -4,9 +4,9 @@ import { Reveal } from "./Reveal";
 import { Eyebrow } from "./Eyebrow";
 
 const QA: [string, string][] = [
-  ["What counts as an ad request?", "One concept or angle in one format — a static, a short edit, a carousel, a set of hook variations. You queue requests; we work through them on your weekly cadence."],
+  ["What counts as an ad request?", "One concept or angle in one format, a static, a short edit, a carousel, a set of hook variations. You queue requests; we work through them on your weekly cadence."],
   ["Do you do video or only static?", "Both. Static is the core, plus motion/static hybrids and short-form video edits cut from your raw clips or UGC."],
-  ["How fast are revisions?", "Most revisions come back in 24–48 hours. Revisions inside your plan are unlimited within reason — we iterate until it's test-ready."],
+  ["How fast are revisions?", "Most revisions come back in 24–48 hours. Revisions inside your plan are unlimited within reason, we iterate until it's test-ready."],
   ["Who is this best for?", "Teams already running or managing paid ads: agency owners, in-house media buyers, ecommerce and DTC operators, and performance marketers."],
   ["Can agencies use this for multiple clients?", "Yes. Growth and Partner support multiple brands/accounts, kept organized so client work never crosses wires. White-label friendly."],
   ["Do you write copy too?", "We write ad copy and headline overlays for the creative itself. We're not a long-form copywriting shop, but the words on the ad are part of the job."],
